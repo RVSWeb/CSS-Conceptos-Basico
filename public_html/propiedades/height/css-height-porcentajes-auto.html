@@ -1,0 +1,97 @@
+<!-- 
+Created on : 28-ago-2019 21:29:36 
+User : Raul Vela 
+Name archive : css-height-porcentajes.html
+References :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+
+    <style>
+
+      *,:after, :before{
+        box-sizing: border-box;
+      }
+
+      div{
+        display: block;
+      }
+
+      .example{
+        background: #f7f7f7;
+        border: 1px solid #dee0e2;
+        font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+        font-size: 13px;
+        margin: 1em 0;
+        overflow: auto;
+        padding: .5em;
+      }
+
+      p{
+        display: block;
+      }
+
+      .example .box {
+        background: rgba(3,88,216,.1);
+        border: 2px solid rgba(3,88,216,.6);
+        margin: 5px;
+        min-height: 50px;
+        padding: 5px;
+        width: 300px;
+      }
+
+      .box {
+        -webkit-column-break-inside: avoid;
+        -moz-column-break-inside: avoid;
+        background: #f7f7f7;
+        border-radius: 2px;
+        margin: 15px 0;
+        padding: 15px;
+      }
+
+      .example .innerbox {
+        background: hsla(8,61%,60%,.15);
+        border-color: hsla(8,61%,60%,.6);
+        height: 40px;
+        margin: 3px;
+        width: 200px;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <div class="example">
+      <div style="position: relative;height: 200px;overflow: visible;">
+        <p style="width: 250px;position: absolute;left: 3px;">
+          div { height: 150px; }
+        </p>
+        <div class="box" style="height: 150px;width: 250px;position: absolute;top: 1.5em">
+          <div class="innerbox" style="height: 50%">
+            div { height: 50%; }
+          </div>
+        </div>
+        <p style="width: 250px;position: absolute;left: 283px;">
+          div { height: auto; }
+        </p>
+        <div class="box" style="height: auto;width: 250px;position: absolute;left: 280px;top: 1.5em;">
+          <div class="innerbox" style="height: 50%">
+            div { height: 50%; }
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

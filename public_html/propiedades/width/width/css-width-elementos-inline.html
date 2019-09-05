@@ -1,0 +1,80 @@
+<!-- 
+Created on : 27-ago-2019 14:31:27 
+User : Raul Vela 
+Name archive : css-width-elementos-inline.html
+References : https://uniwebsidad.com/libros/referencia-css2/width#
+--> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elementos inline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/gif" sizes="16x16"  href="https://goo.gl/cais23">
+  </head>
+  <style>
+
+    p{
+      width: 50%;
+      margin: 10px;
+      background: #ffff66;
+      padding: 10px;
+    }
+
+    div#example{
+      background: #f7f7f7;
+      border: 1px solid #dee0e2;
+      font-size: 13px;
+      margin: 1em 0;
+      overflow: auto;
+      padding: .5em;
+    }
+
+    a{
+      border: 1px dashed #cccccc;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    #a-50px{
+      width: 50px;
+    }
+
+    #a-100px{
+      width: 100px;
+    }
+
+    #a-150px{
+      width: 150px;
+    }
+
+  </style>
+  <body>
+    <p>width: <span id="span1"></span> max; width: 50% - <span id="span2"></span> max;</p>
+    <p>Los elementos inline no se ven afectados por el width</p>
+    <div id="example">
+      <a href="#" id="a-50px">(width: 50px) Lorem ipsum dolor sit amet</a>
+      <br>
+      <a href="#" id="a-100px">(width: 100px) Lorem ipsum dolor sit amet</a>
+      <br>
+      <a href="#" id="a-150px">(width: 150px) Lorem ipsum dolor sit amet</a>
+    </div>
+
+    <p>
+      Si en vez de una unidad de medida 
+      se indica un porcentaje, 
+      la referencia de ese valor es la anchura 
+      del elemento que lo contiene.
+    </p>
+  </body>
+  <script>
+
+    var spanList = document.getElementById('span1').innerHTML = screen.width;
+    var spanList = document.getElementById('span2').innerHTML = (screen.width / 2);
+
+  </script>
+
+</html>

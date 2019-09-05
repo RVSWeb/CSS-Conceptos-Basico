@@ -1,0 +1,7 @@
+Si desea sobrescribir un estilo definido por Bootstrap, entonces:
+1. Averiguar en qué hoja de estilos de bootstrap se define la regla.
+2. Ir a "“src/styles/bootstrap-custom”.
+3. Busque la misma hoja de estilos.
+4. Si no existe, crear uno nuevo en ese directorio, con el mismo nombre.
+5. Añadir su sobreescritura y señalar cualquier cosa de importancia.
+6. Por último, importar la hoja de estilos nuevos en "src/styles/style.less".

@@ -1,0 +1,98 @@
+<!-- 
+Created on : 29-ago-2019 0:12:25 
+User : Raul Vela 
+Name archive : max-height-concepto.html
+References :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- generics -->
+    <link rel="icon" href="../../-src/img/icons/Icon-32.png" sizes="32x32">
+    <link rel="icon" href="../../-src/img/icons/Icon-57.png" sizes="57x57">
+    <link rel="icon" href="../../-src/img/icons/Icon-76.png" sizes="76x76">
+    <link rel="icon" href="../../-src/img/icons/Icon-96.png" sizes="96x96">
+    <link rel="icon" href="../../-src/img/icons/Icon-128.png" sizes="128x128">
+    <link rel="icon" href="../../-src/img/icons/Icon-192.png" sizes="192x192">
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href=“../../-src/img/icons/Icon-192.png">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="../../-src/img/icons/Icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="../../-src/img/icons/Icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../../-src/img/icons/Icon-180.png" sizes="180x180">
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../../-src/img/icons/Icon-144.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      *, ::before , ::after{
+        box-sizing: border-box;
+      }
+
+      div{
+        display: block;
+      }
+
+      .example{
+        background: #f7f7f7;
+        border: 1px solid #dee0e2;
+        font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+        font-size: 13px;
+        margin: 1em 0;
+        overflow: auto;
+        padding: .5em;
+      }
+
+      .box{
+        background: rgba(3,88,216,.1);
+        border: 2px solid rgba(3,88,216,.6);
+        margin: 5px;
+        min-height: 50px;
+        padding: 5px;
+        width: 300px;
+      }
+
+      #caja-sin-max-height{
+        width: 200px;
+      }
+
+      #caja-con-max-height{
+        width: 200px;
+        max-height: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      <div class="box" id="caja-sin-max-height">
+        Propiedad CSS menos utilizadas, 
+        ya que normalmente se fijan las 
+        anchuras de los elementos y 
+        se deja que el navegador calcule 
+        automáticamente la altura de cada 
+        elemento de forma que quepan 
+        sus contenidos.
+      </div>
+
+      <div class="box" id="caja-con-max-height">
+        Como su anchura es fija, el navegador 
+        ajusta la altura de cada &lt;div&gt; hasta 
+        que quepan todos sus contenidos.<br>
+        El primer &lt;div&gt; no tiene ninguna 
+        restricción en su height, por lo que 
+        el navegador muestra correctamente 
+        los contenidos en su interior.
+      </div>
+    </div>
+  </body>
+</html>

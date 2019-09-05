@@ -1,0 +1,360 @@
+/* 
+    Created on : 05-sep-2019, 0:44:28
+    Author     : RVS
+*/
+
+
+/**
+*
+* person.css 
+*
+* Diseña elementos basico de una pagina web para aprender BEM y 
+* las screen responsivas con media-querys
+*
+*/
+
+/* Bloque - Definimos Tamaño y posicion - Cuerpo */
+.person{
+  display: block;
+  width: 85%;
+  margin: 10px auto; 
+  height: 400px;
+  padding: 5%;
+}
+
+/* Bloque y modificador de estilo - DEFINIMOS el estilo - Detalles */
+.person.person--female{
+  text-align: center;
+  font-weight: bolder;
+  color: #000;
+  border-radius: 6px;
+  background-color: pink;
+}
+
+/*Bloque + Elemento - Definimos otra extremidad */
+.persona__cabeza {
+  position: relative;
+  bottom: 10px;
+  display: block;
+  width: 30%;
+  padding: 2%;
+  margin: 1% auto;
+  border-radius: 20px;
+}
+
+/*Bloque + Modificador - Definimos el detalle de esa extremidad */
+.persona--nombre{
+  font-family: 'Roboto',sans-serif;
+  font-size: 3.0em;
+  text-align: center;
+  background-color: #6666ff;
+}
+
+/* Bloque y modificador de estilo - DEFINIMOS otro elemento - Extremidad */
+.person__hand{
+  /*width: 10%;*/
+  /*height: 20%;*/
+  margin: 1% auto;
+  padding: 2%;
+  border: 0 solid #c0c;
+  background-color: violet;
+  border-radius: 6px;
+}
+
+/* Modificador de estilo */
+.hand--left {
+  float: left;
+  font-size: 0.95em;
+  font-family: 'Roboto',sans-serif;
+}
+
+/* Modificador de estilo */
+.hand--right {
+  float: right;
+  font-family: 'Roboto',sans-serif;
+}
+
+/* Bloque , elemento y modificador de estilo 
+- DEFINIMOS los detalles de esa extremidad */
+.hand--female{
+  display: block;
+  padding: 10px;
+  background-color: #ff66ff;
+}
+
+.female--unias{
+  display: block;
+  margin: 1px auto;
+  padding: 10px;
+  width: 40px;
+  height: 60px;
+  font-family: 'Roboto',sans-serif;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.unias--rojas{
+  background-color: #ff6666;
+  font-size: 1.0em;
+
+}
+
+.unias--azules{
+  background-color: #99ccff;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 215px) and (min-width: 200px) {
+
+  .persona__cabeza {
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 80%;
+    padding: 5%;
+    margin: 5% auto;
+  }
+
+  .persona--nombre{
+    border-radius: 1%;
+    background-color: #6666ff;
+    font-family: 'Roboto',sans-serif;
+  }
+
+  .person__hand{
+    width: 80%;
+  }
+
+  .hand--left{
+    padding: 10%;
+  }
+
+  .hand--right{
+    padding: 10%;
+  }
+
+}
+
+/* Para 320px - Todo por encima de 5px y por debajo de 340px */
+@media only screen and (max-width: 340px) and (min-width: 216px) {
+
+  /* Bloque - Definimos Tamaño y posicion - Cuerpo */
+  .person{
+    display: block;
+    width: 85%;
+    margin: 10px auto; 
+    height: 200px;
+    padding: 5%;
+  }
+
+  /* Bloque y modificador de estilo - DEFINIMOS el estilo - Detalles */
+  .person.person--female{
+    text-align: center;
+    font-weight: bolder;
+    color: #000;
+    border-radius: 6px;
+    background-color: pink;
+  }
+
+  /*Bloque + Elemento - Definimos otra extremidad*/ 
+  .persona__cabeza {
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 50%;
+    padding: 5%;
+    margin: 1% auto;
+  }
+
+  /*Bloque + Modificador - Definimos el detalle de esa extremidad */
+  .persona--nombre{
+    border-radius: 1%;
+    background-color: #6666ff;
+    font-family: 'Roboto',sans-serif;
+  }
+
+  /* Bloque y modificador de estilo - DEFINIMOS otro elemento - Extremidad */
+  .person__hand{
+    display: block;
+    width: 40%;
+    height: 60%;
+    margin: 1% auto;
+    padding: 2%;
+    border: 0 solid #c0c;
+    background-color: violet;
+    border-radius: 6px;
+  }
+
+  /* Modificador de estilo */
+  .hand--left {
+    float: left;
+    font-size: 0.95em;
+    font-family: 'Roboto',sans-serif;
+  }
+
+  /* Modificador de estilo */
+  .hand--right {
+    float: right;
+    font-family: 'Roboto',sans-serif;
+  }
+
+  /* Bloque , elemento y modificador de estilo 
+  - DEFINIMOS los detalles de esa extremidad */
+  .hand--female{
+    display: block;
+    padding: 10px;
+    background-color: #ff66ff;
+  }
+
+  .female--unias{
+    display: block;
+    margin: 1px auto;
+    padding: 10px;
+    width: 40px;
+    height: 60px;
+    font-family: 'Roboto',sans-serif;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+
+  .unias--rojas{
+    background-color: #ff6666;
+    font-size: 1.0em;
+
+  }
+
+  .unias--azules{
+    background-color: #99ccff;
+    font-size: 0.9em;
+  }
+}
+
+/* Para 480px */
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+
+  .person {
+    width: 85%;
+    height: 200px;
+  }
+
+  /*Bloque + Elemento - Definimos otra extremidad */
+  .persona__cabeza {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    margin: 1% auto;
+    border-radius: 2%;
+  }
+
+  .persona--nombre{
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+  }
+}
+
+/* Para 600px */
+@media only screen and (max-width: 620px) and (min-width: 501px) {
+
+  .person {
+    width: 85%;
+    height: 200px;
+  }
+
+  /*Bloque + Elemento - Definimos otra extremidad */
+  .persona__cabeza {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    margin: 1% auto;
+    border-radius: 2%;
+  }
+
+} 
+
+/* Para 800px */
+@media only screen and (max-width: 820px) and (min-width: 621px) {
+
+  /*Bloque + Elemento - Definimos otra extremidad */
+  .persona__cabeza {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    margin: 1% auto;
+    border-radius: 2%;
+  }
+
+  .persona--nombre{
+    background-color: #c0c;
+  }
+
+} 
+
+/* Para 960px */
+@media only screen and (max-width: 980px) and (min-width: 821px) {
+
+  /*Bloque + Elemento - Definimos otra extremidad */
+  .persona__cabeza {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    margin: 1% auto;
+    border-radius: 2%;
+  }
+
+  .persona--nombre{
+    background-color: #ff6666;
+  }
+}
+
+/* Para 960px */
+@media only screen and (max-width: 1200px) and (min-width: 981px) {
+
+  /*Bloque + Elemento - Definimos otra extremidad */
+  .persona__cabeza {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    margin: 1% auto;
+    border-radius: 2%;
+  }
+
+  .persona--nombre{
+    background-color: #ff66ff;
+  }
+}
+
+/* Para 1024px */
+@media only screen and (min-width: 1201px) {
+
+  /*Bloque + Elemento - Definimos otra extremidad */
+  .persona__cabeza {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    margin: 1% auto;
+    border-radius: 2%;
+  }
+
+  .persona--nombre{
+    background-color: #4a993e;
+  }
+
+}

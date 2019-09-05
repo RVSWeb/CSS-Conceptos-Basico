@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://goo.gl/cais23">
+  </head>
+  <style>
+
+    body{
+      font-size: 1em;
+      background-color: red;
+    }
+
+    h1{
+      font-size: 200%;
+      background-color: green;
+    }
+
+    h2{
+      font-size: 150%;
+      background-color: blue;
+    }
+
+    div#contenido{
+      width: 600px;
+      background-color: yellow;
+    }
+
+    div.principal{
+      width: 80%;
+      background-color: aqua;
+    }
+
+    div#contenido-2{
+      width: 100%;
+      background-color: yellow;
+    }
+
+    div.principal-2{
+      width: 55%;
+      background-color: aqua;
+    }
+
+  </style>
+  <body>
+
+    <h1> font-size: 200%  - Respecto al Parent que es el &lt;body&gt; </h1>
+    <h2> font-size: 150%  - Respecto al Parent que es el &lt;body&gt;</h2>
+
+    <div id="contenido">
+      width: 600px;  - Respecto al Parent que es el &lt;body&gt;
+      <div class="principal">
+        width: 80%;  - Respecto al Parent que es el &lt;body&gt;
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="contenido-2">
+      width: 100%; - Respecto al Parent que es el &lt;body&gt;
+      <div class="principal-2">
+        width: 55%; - Respecto al Parent que es el contenido-2  
+      </div>
+    </div>
+
+  </body>
+</html>

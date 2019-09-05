@@ -1,0 +1,24 @@
+/* 
+    Created on : 03-ago-2019, 14:41:11
+    Author     : RVS
+*/
+
+p{
+  border: 1px solid red;
+  text-align: center;
+  background: #dee0e2;
+  font-size: 1.6em; 
+}
+
+/*Elemento inline */
+
+nav.c0inline{
+  display: inline;
+  background-color: brown;
+}
+
+.div_inline-block{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}

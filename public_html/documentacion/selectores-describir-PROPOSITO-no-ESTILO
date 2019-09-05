@@ -1,0 +1,5 @@
+Los selectores deben de describir el proposito no el estilo
+
+#page .content > .inner-module . title.highlighted {...}
+
+.title-highlighted {...}

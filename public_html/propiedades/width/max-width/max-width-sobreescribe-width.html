@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+https://developer.mozilla.org/es/docs/Web/CSS/max-width
+-->
+<html>
+  <head>
+    <title>max-width sobreescribe width</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="https://goo.gl/cais23" type="image/png" sizes="any">
+    <style>
+      
+      #parent{
+        background: lightblue;
+        width: 500px;
+      }
+
+      #child{
+        background: gold;
+        width: 100%;
+        max-width: 250px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="parent">
+      width: 500px; - Respecto al <b>body</b>
+    </div>
+    
+    <div id="child">
+      width: 100% - max-width: 250px; 
+      <br>Respecto al <b>body</b> 
+    </div>
+
+    <hr>
+
+    <div id="parent">
+      width: 500px; - Respecto al <b>body</b>
+      <div id="child">
+        width: 100% - max-width: 250px;
+      </div>
+    </div>
+
+  </body>
+</html>

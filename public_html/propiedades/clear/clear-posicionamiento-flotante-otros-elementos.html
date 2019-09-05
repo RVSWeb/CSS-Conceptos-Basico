@@ -1,0 +1,58 @@
+<!-- 
+Created on : 28-ago-2019 18:53:14 
+User : Raul Vela 
+Name archive : clear-posicionamiento-flotante-otros-elementos.html
+References : https://developer.mozilla.org/es/docs/Web/API/Document/createElement
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" 
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+
+  </head>
+  <body>
+
+    <p>
+      La propiedad 'float' convierte los elementos en 'block' y flotan uno al lado de otro si se le añade width y height 
+    </p>
+
+  </body>
+  <script>
+
+    /**
+     * 
+     * @return {undefined}
+     */
+    function agregarElemento() {
+
+      for (var i = 1; i <= 10; i++) {
+        var nuevoParrafo = document.createElement('span');
+        var estilos = "background: #ce9e9e; \n\
+                       float: left; \n\
+                       width: 100px; \n\
+                       height: 100px; \n\
+                       padding: 5px; \n\
+                       border: black 2px solid;";
+        nuevoParrafo.style = estilos;
+        var nuevoTexto = document.createTextNode('parrafo: ' + i);
+        nuevoParrafo.appendChild(nuevoTexto);
+        document.body.insertBefore(nuevoParrafo, nuevoParrafo[i]);
+      }
+    }
+
+    document.body.onload = agregarElemento;
+
+  </script>
+
+
+</html>

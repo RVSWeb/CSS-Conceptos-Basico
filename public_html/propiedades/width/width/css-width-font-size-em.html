@@ -1,0 +1,83 @@
+<!-- 
+Created on : 28-ago-2019 10:42:18 
+User : Raul Vela 
+Name archive : css-width-font-size-em.html
+References :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      *{
+        box-sizing: border-box;
+      }
+      
+      .example .box{
+        background-color: rgba(3,88,216,.1);
+        border: 2px solid rgba(3,88,216,.6);
+        margin: 5px;
+        min-height: 50px;
+        padding: 5px;
+        font-family: SFMono-Regular,
+          Menlo,Monaco,
+          Consolas,
+          Liberation Mono,
+          Courier New,
+          monospace;
+      }
+
+      .box{
+        border-radius: 2px;
+      }
+
+      #div-child-font-0{
+        width: 20em;
+      }
+
+      #div-child-font-1{
+        width: 20em;
+        font-size: 1em;
+      }
+
+      #div-child-font-2{
+        width: 20em;
+        font-size: 2em;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      <div class="box" id="div-child-font-0">
+        div { width: 20em; font-size: 1em;}
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="box" id="div-child-font-1">
+        div { width: 20em; font-size: 1em;
+        }
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="box" id="div-child-font-2">
+        div { width: 20em; font-size: 2em;
+        }
+      </div>
+    </div>
+
+  </body>
+</html>

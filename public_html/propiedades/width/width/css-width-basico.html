@@ -1,0 +1,167 @@
+<!--Created on 02-ago-2019, 14:04:49-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Width basico</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel='stylesheet' href="width-100.css">
+    <link rel='stylesheet' href="width-50.css">
+    <link rel='stylesheet' href="width-25.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+    <p style="font-size: 2em">
+      Todos los elementos block siempre van a ocupar el 100% <br>
+      respecto al elemento padre<br>
+      como puede ser la pantalla del navegador u otra caja 'box'<br>
+    </p>
+    <p>Cajas independientes al width 100%</p>
+
+    <nav>
+      <div class="c1_100">
+        Primera caja
+      </div>
+      <div class="c2_100">
+        Segunda caja
+      </div>
+      <div class="c3_100">
+        Tercera caja
+      </div>
+      <div class="c4_100">
+        Cuarta caja
+      </div>
+      <div class="c5_100">
+        Quinta caja
+      </div>
+    </nav>
+
+    <p>
+      Cajas Incluidas unas dentro de otras <br>
+      La ultima caja 'capa' es la que <br>
+      esta por encima de las demas al width 100%<br>
+    </p>
+
+    <nav>
+      <div class="c1_100">
+        1º caja
+        <div class="c2_100">
+          2º caja
+          <div class="c3_100">
+            3º caja
+            <div class="c4_100">
+              4º caja
+              <div class="c5_100">
+                5º caja
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <p>Cajas independientes al width 50%</p>
+
+    <nav>
+      <div>
+        <div class="c1_50">
+          1º caja
+        </div>
+        <div class="c2_50">
+          2º caja
+        </div>
+        <div class="c3_50">
+          3º caja
+        </div>
+        <div class="c4_50">
+          4º caja
+        </div>
+        <div class="c5_50">
+          5º caja
+        </div>
+      </div>
+    </nav>
+
+    <p>
+      Cajas Incluidas unas dentro de otras <br>
+      La ultima caja 'capa' es la que <br>
+      esta por encima de las demas al width 50%<br>
+    </p>
+
+    <nav>
+      <div class="c1_50">
+        1º caja
+        <div class="c2_50">
+          2º caja
+          <div class="c3_50">
+            3º caja
+            <div class="c4_50">
+              4º caja
+              <div class="c5_50">
+                5º caja
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <p>Cajas independientes al width 25% <br>
+      Excepto la tercera que tiene un width 100%</p>
+
+    <nav>
+      <div>
+        <div class="c1_25">
+          1º caja
+        </div>
+        <div class="c2_25">
+          2º caja
+        </div>
+        <div class="c3_25">
+          3º caja - 100% width
+        </div>
+        <div class="c4_25">
+          4º caja
+        </div>
+        <div class="c5_25">
+          5º caja
+        </div>
+      </div>
+    </nav>
+
+    <p>
+      Cajas Incluidas unas dentro de otras <br>
+      La ultima caja 'capa' es la que <br>
+      esta por encima de las demas al width 25%<br>
+      Excepto la tercera que tiene un width 100%
+    </p>
+
+    <nav>
+      <div class="c1_25">
+        1º caja
+        <div class="c2_25">
+          2º caja
+          <div class="c3_25">
+            3º caja - 100% width
+            <div class="c4_25">
+              4º caja
+              <div class="c5_25">
+                5º caja
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

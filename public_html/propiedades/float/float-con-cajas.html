@@ -1,0 +1,90 @@
+<!--Created on 02-ago-2019, 19:16:35-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Float con cajas</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="float con cajas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      .flotandoIzq{
+        float: left;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100px;
+        height: 100px;
+        background: palegreen;
+      }
+
+      .flotandoDer{
+        float: right;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100px;
+        height: 100px;
+        background: palegreen;
+      }
+
+      p#p1{
+        background: palegreen;
+        border: 1px solid red;
+      }
+      p#p2{
+        background: #ff9999;
+        border: 1px solid red;
+      }
+      p#p3{
+        background: #ffff66;
+        border: 1px solid red;
+      }
+
+      .example{
+        background:#f7f7f7;
+        border:1px solid #dee0e2;
+        font-family:SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+        font-size:13px;
+        font-size-adjust:.5;
+        margin:1em 0;
+        overflow:auto;
+        padding:.5em
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <img class="flotandoIzq" src='rvs-logo 114x114.jpg' alt="logotipo">
+    <p id='p1'>
+      El elemento img es un elemento inline-block lo que significa que ocupa el espacio del elemento siguiendo una linea y ademas obecede a los elementos width , height , margin que se le asigne desde el archivo de CSS , es la forma de tener elementos encadenados y ademas definirle su posicion , cuando se le aplica la propiedad float se convierte en un elemento block y se superpone al elemento que tienen por debajo , todos los demas elementos se coloca a su derecha o izquierda
+    </p>
+    <p>
+      Aunque en el ejemplo anterior parece que los dos párrafos adaptan su forma para fluir alrededor de la imagen flotada, en realidad sólo se adaptan los contenidos y no los propios párrafos.
+    </p>
+
+    <img class="flotandoIzq" src='rvs-logo 114x114.jpg' alt="logotipo">
+    <img class="flotandoIzq" src='rvs-logo 114x114.jpg' alt="logotipo">
+    <p id='p2'>
+      El elemento img es un elemento inline-block lo que significa que ocupa el espacio del elemento siguiendo una linea y ademas obecede a los elementos width , height , margin que se le asigne desde el archivo de CSS , es la forma de tener elementos encadenados y ademas definirle su posicion , cuando se le aplica la propiedad float se convierte en un elemento block y se superpone al elemento que tienen por debajo , todos los demas elementos se coloca a su derecha o izquierda
+    </p>
+
+    <img class="flotandoIzq" src='rvs-logo 114x114.jpg' alt="logotipo">
+    <img class="flotandoDer" src='rvs-logo 114x114.jpg' alt="logotipo">
+    <p id='p3'>
+      El elemento img es un elemento inline-block lo que significa que ocupa el espacio del elemento siguiendo una linea y ademas obecede a los elementos width , height , margin que se le asigne desde el archivo de CSS , es la forma de tener elementos encadenados y ademas definirle su posicion , cuando se le aplica la propiedad float se convierte en un elemento block y se superpone al elemento que tienen por debajo , todos los demas elementos se coloca a su derecha o izquierda
+      <br>
+      Aunque en el ejemplo anterior parece que los dos párrafos adaptan su forma para fluir alrededor de la imagen flotada, en realidad sólo se adaptan los contenidos y no los propios párrafos.
+      <br>
+      <b>
+        Agregamos 2 elementos float:left y float:rigth y se situan a los lados de los elementos mientras el texto se queda en el centro
+      </b>
+    </p>
+  </body>
+</html>

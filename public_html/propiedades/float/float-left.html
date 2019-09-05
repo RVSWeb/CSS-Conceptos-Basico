@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>float left</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      #titulo{
+        background-color: #ffcccc;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      #en-linea{
+        background: #ccccff;
+      }
+
+      .capital{
+        float: left;
+        color: red;
+        font-size: 400%;
+        font-family: monospace;
+        background-color: pink;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+
+    <h3 id='titulo'>Los elemento inline con float se convierte en elemento block y se posicionan por encima del resto de elementos inline</h3>
+
+
+    <p>
+      <span id='en-linea'>Elemento inline dentro del elemento block del parrafo</span>
+      <span class="capital">L</span>
+      a primera letra de este párrafo es una letra capital, 
+      es decir, una letra más grande que ocupa varias líneas de texto. 
+      Para ello, en la hoja de estilo hay que hacer la letra flotante y 
+      aumentar su tamaño. En este caso se ha cambiado también el color y 
+      el tipo de letra para resaltar el espacio ocupado por la primera letra.
+    </p>
+
+  </body>
+</html>

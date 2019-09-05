@@ -1,0 +1,31 @@
+/* 
+    Created on : 03-ago-2019, 14:41:11
+    Author     : RVS
+*/
+
+p{
+  border: 1px solid red;
+  text-align: center;
+  background: #dee0e2;
+  font-size: 1.6em; 
+}
+
+.c1_capa1{
+  background-color: violet;
+}
+
+.c1_capa2{
+  background-color: yellow;
+}
+
+.c1_capa3{
+  background-color: green;
+}
+
+.c1_capa4{
+  background-color: aqua;
+}
+
+.c1_capa5{
+  background-color: grey;
+}

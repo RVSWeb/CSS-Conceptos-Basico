@@ -1,0 +1,80 @@
+<!-- 
+Created on : 29-ago-2019 17:44:15 
+User : Raul Vela 
+Name archive : min-height-basico.html
+Ref : https://uniwebsidad.com/libros/referencia-css2/min-width
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>min height basico</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="min height basico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fondo navegador -->
+    <meta name="theme-color" content="#4285f4">
+    <!-- Archivo configuración de los recursos del HTML para el manifiesto -->
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- generics -->
+    <link rel="icon" href="../../-src/img/icons/Icon-32.png" sizes="32x32">
+    <link rel="icon" href="../../-src/img/icons/Icon-57.png" sizes="57x57">
+    <link rel="icon" href="../../-src/img/icons/Icon-76.png" sizes="76x76">
+    <link rel="icon" href="../../-src/img/icons/Icon-96.png" sizes="96x96">
+    <link rel="icon" href="../../-src/img/icons/Icon-128.png" sizes="128x128">
+    <link rel="icon" href="../../-src/img/icons/Icon-192.png" sizes="192x192">
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href="../../-src/img/icons/Icon-192.png">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="../../-src/img/icons/Icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="../../-src/img/icons/Icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../../-src/img/icons/Icon-180.png" sizes="180x180">
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../../-src/img/icons/Icon-144.png">
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      * , ::before , ::after{
+        box-sizing: border-box;
+      }
+
+      div{
+        height: 50%;
+        background: rgba(3,88,216,.1);
+        border: 2px solid rgba(3,88,216,.6);
+        box-sizing: border-box;
+      }
+
+      #box-simple{
+        width: auto;
+      }
+
+      #box-min-width{
+        width: auto;
+        min-width: 500px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="box-simple">
+      width: auto;
+      height: 100px;
+    </div>
+
+    <hr>
+
+    <div id="box-min-width">
+      width: auto;
+      min-width: 500px;<br>
+      El <b>width</b> nunca bajara de los 500px<br>
+      aunque reduzca la pantalla del dispositivo
+    </div>
+  </body>
+</html>

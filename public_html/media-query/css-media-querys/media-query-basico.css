@@ -1,0 +1,100 @@
+/* 
+    Created on : 03-sep-2019, 0:12:56
+    Author     : RVS
+*/
+
+* , ::before , ::after{
+  box-sizing: border-box;
+}
+
+main#contenedor{
+  padding-left: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+div#caja-principal{
+  width: 100%;
+}
+
+p#texto-principal{
+  padding: 5%;
+  background-color: red;
+  font-size: 1em;
+  font-family: 'Roboto',sans-serif;
+}
+
+aside#caja-lateral-principal{
+  margin-left: 10px;
+  width: 20%;
+}
+
+div#subcaja-lateral{
+
+}
+
+select#subcaja-menu{
+
+}
+
+option.entry{
+  font-size: 1em;
+}
+
+img#mapa-mundial{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Indicamos la resolucion en pixeles*/
+/*Los anteriores estilos sólo se aplicaran 
+asi el dispositivo tiene un ancho inferior a 480px*/
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 480px){
+
+  /* Indicamos el ancho que debe tomar */
+  #contenedor{
+    width: 100%;
+  }
+
+  #texto-principal{
+    background-color: aqua;
+  }
+
+  #sidebar{
+    display: none;
+  }
+
+  #menu{
+    text-align: center;
+  }
+}
+
+/*Indicamos la resolucion en pixeles*/
+@media screen and (max-width: 800px){
+
+  /* Indicamos el ancho que debe tomar */
+  #contenedor{
+    width: 100%;
+  }
+
+  #texto-principal{
+    background-color: blue;
+  }
+}
+
+/*Indicamos la resolucion en pixeles*/
+@media screen and (max-width: 1200px){
+
+  /* Indicamos el ancho que debe tomar */
+  #contenedor{
+    width: 100%;
+  }
+
+  #texto-principal{
+    background-color: green;
+  }
+}

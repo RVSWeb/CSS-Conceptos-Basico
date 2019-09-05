@@ -1,0 +1,35 @@
+/* 
+    Created on : 03-ago-2019, 14:41:11
+    Author     : RVS
+*/
+
+p{
+  border: 1px solid red;
+  text-align: center;
+  background: #dee0e2;
+  font-size: 1.6em; 
+}
+
+nav{
+  background: orange;
+}
+
+.c1_100{
+  background: red;
+}
+
+.c2_100{
+  background: yellow;
+}
+
+.c3_100{
+  background: green;
+}
+
+.c4_100{
+  background: aqua;
+}
+
+.c5_100{
+  background: gray;
+}

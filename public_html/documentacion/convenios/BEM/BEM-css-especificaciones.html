@@ -1,0 +1,51 @@
+<!-- 
+Created on : 04-sep-2019 17:02:13 
+User : Raul Vela 
+Name archive : BEM-css-especificaciones.html
+Ref : http://getbem.com/introduction/
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BEM CSS3 especificaciones</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="BEM CSS3 especificaciones">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#4285f4">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style/custom/buttons.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style/custom/buttons-custom-BEM.css">
+  </head>
+  <body>
+
+    <h3>Ejemplo de no desglosamiento</h3>
+    <a class="btn-login" href="#">
+      <span>&dollar;9.99</span>
+      <span>Subscribe</span>
+    </a>
+
+    <h3>Ejemplo de desglosamiento</h3>
+    <a class="btn btn--big btn--orange" href="#">
+      <span class="btn__price">&dollar;9.99</span>
+      <span class="btn__text">Subscribe</span>
+    </a>
+    
+    <hr>
+
+    <button class="button">
+      Normal button
+    </button>
+    <button class="button button--state-success">
+      Success button
+    </button>
+    <button class="button button--state-danger">
+      Danger button
+    </button>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- https://developer.mozilla.org/es/docs/Web/CSS/max-width -->
+<html>
+  <head>
+    <title>max-width-adaptacion-ancho-pantalla</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+          href="../../src/img/Yin_yang.svg" 
+          sizes="any"
+          type="image/svg+xml">
+    
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
+          integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" 
+          crossorigin="anonymous" />
+    
+    <style>
+
+      .parent{
+        width: 100%; /* Respecto al padre - body */
+        border: 5px solid rgba(3,88,216,.6);
+        background-color: rgba(3,88,216,.1);
+      }
+
+      .child{
+        /* Respecto al padre que es body y ocupa el 100% del ancho de la pantalla */
+        max-width: 400px; 
+        border: 1px solid #ff0000;
+        background-color: #ffff00;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <hr>
+
+    <div class="parent">
+      width: 100%; - <b>padre</b> es 'body'
+    </div>
+    
+    <div class="child">
+      max-width: 400px; - <b>padre</b> es 'body'
+    </div>
+
+    <hr>
+
+    <div class="parent">
+      width: 100%; - <b>padre</b> es 'body'
+      <div class="child">
+        max-width: 400px; - <b>hijo</b> es 'parent'
+      </div>
+    </div>
+
+    <hr>
+
+  </body>
+</html>

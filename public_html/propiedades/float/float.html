@@ -1,0 +1,86 @@
+<!--Created on 02-ago-2019, 19:16:35-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>uso de float</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="uso de float">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/png" href="/path/to/icons/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/path/to/icons/apple-touch-icon-180x180.png">
+  
+    <link rel="shortcut icon" type="image/png" href="https://goo.gl/cais23" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+
+      div{
+        max-width: 150px;
+        padding: 10px;
+        overflow: auto;
+        background: aquamarine;
+      }
+
+      span{
+        background: #ff9999;
+      }
+
+      p{
+        background: wheat;
+      }
+
+      .caja {
+        float: left;
+        background-color: yellow;
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        margin: 50px 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div>
+      La propiedad float
+      convierte un elemento inline
+      en un elemento block automaticamente
+    </div>
+
+    <span>
+      Soy un elemento inline que le aplico
+      la propiedad float:left para convertirlo
+      en un elemento block y superponerse por
+      encima de los elementos
+    </span>
+
+    <p>
+      Elemento propiedad display:block
+      que se usara para ocupar todo el ancho
+      de la pantalla
+    </p>
+
+    <span class="caja">
+      CAJA 1 - propiedad float transforma block un elemento inline
+    </span>
+    <span class="caja">
+      CAJA 2 - propiedad float transforma block un elemento inline
+    </span>
+    <span class="caja">
+      CAJA 3 - propiedad float transforma block un elemento inline
+    </span>
+
+    <p>
+      Este elemento block esta por 
+      debajo del elemento float:left
+    </p>
+
+  </body>
+</html>

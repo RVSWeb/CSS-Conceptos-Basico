@@ -1,0 +1,83 @@
+<!--Created on 02-ago-2019, 14:04:49-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Width basico</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel='stylesheet' href="width-superponerColores.css">
+    <link rel='stylesheet' href="width-superponerLinea.css">
+    <link rel='stylesheet' href="width-superponerBlock.css">
+    <link rel='stylesheet' href="width-superponerBlock50.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+    <p>Elemento padre inline e hijo inline-block</p>
+    
+    <nav class="c0inline">
+      <div class="div_inline-block c1_capa1">
+        <div class="div_inline-block c1_capa2">
+          <div class="div_inline-block c1_capa3 ">
+            <div class="div_inline-block c1_capa4">
+              <div class="div_inline-block c1_capa5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <p>Elemento block al 100% width</p>
+
+    <nav class="c0block">
+      <div class="div_block c1_capa1">
+        <div class="div_block c1_capa2">
+          <div class="div_block c1_capa3">
+            <div class="div_block c1_capa4">
+              <div class="div_block c1_capa5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <p>
+      Elemento Padre block 50% width<br>
+      A cada capa se le aplica el 50%<br>
+      del ancho de la capa anterior<br>
+      A cada capa se le hace el 20%<br>
+      del padding de la capa superior<br>
+      Asi sucesivamente
+    </p>
+    
+    <nav class="c0block50">
+      <div class="div_block50 c1_capa1">
+        <div class="div_block50 c1_capa2">
+          <div class="div_block50 c1_capa3">
+            <div class="div_block50 c1_capa4">
+              <div class="div_block50 c1_capa5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  </body>
+</html>

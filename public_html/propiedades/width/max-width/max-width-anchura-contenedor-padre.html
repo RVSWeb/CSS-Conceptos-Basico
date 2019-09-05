@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+https://developer.mozilla.org/es/docs/Web/CSS/max-width
+-->
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../src/img/favicon.ico" type="text/css">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
+          integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" 
+          crossorigin="anonymous" />
+    <style>
+
+      #parent{
+        width: 95%; /* Ocupa el 95% de todo el ancho del 'body' */
+        max-width: 500px; /* Tendra 500px mientras el ancho sea mayor */
+        background-color: #ff9999;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="parent">
+      Ocupa el 95% de todo el ancho del 'body' 
+      - Tendra 1200px mientras el ancho sea mayor
+    </div>
+
+  </body>
+</html>

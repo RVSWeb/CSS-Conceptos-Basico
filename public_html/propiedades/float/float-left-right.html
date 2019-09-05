@@ -1,0 +1,77 @@
+<!-- 
+Created on : 28-ago-2019 20:53:08 
+User : Raul Vela 
+Name archive : float-left-right.html
+References :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      .parrafo-1{
+        background-color: #ccccff;
+      }
+
+      .izq{
+        float: left;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+
+      }
+
+      .der{
+        float: right;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+      }
+
+      hr{
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <p>
+      <span class="parrafo-1">
+        Texto antes de las imagenes con float:left y float:right
+      </span>
+      GNU + Linux = GNU/Linux. El término GNU/Linux 
+      reconoce la contribución del proyecto GNU 
+      en la creación de sistemas operativos libres.
+      <img class="izq" src="../-src/img/gnu-head-sm.jpg" alt="gnu">
+      <img class="der" src="../-src/img/tux.jpg" alt="tux">
+    </p>
+
+    <hr>
+
+    <p>
+      <img class="izq" src="../-src/img/gnu-head-sm.jpg" alt="gnu">
+      <img class="der" src="../-src/img/tux.jpg" alt="tux">
+      <span class="parrafo-1">
+        Texto despues de las imagenes con float:left y float:right
+      </span>
+      GNU + Linux = GNU/Linux. El término GNU/Linux 
+      reconoce la contribución del proyecto GNU 
+      en la creación de sistemas operativos libres.
+    </p>
+
+  </body>
+</html>

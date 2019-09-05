@@ -1,0 +1,43 @@
+/* 
+    Created on : 04-sep-2019, 17:01:33
+    Author     : RVS
+*/
+
+/**
+* .btn 
+*
+* Botones de elementos 'anchor' para mostrar y seleccionar precios y producto
+*
+*/ 
+
+.btn-login{
+  display: inline-block;
+  padding: 2em;
+  background-color: #5d5;
+  color: #fff;
+}
+
+/* Componente de bloque - Estilo general*/
+.btn{
+  display: inline-block;
+}
+
+/* Elemento que depende del bloque - Estilo especifico */
+.btn__price{
+  padding: 2em;
+}
+
+.btn__text{
+  padding: 2em;
+}
+
+/*  Modificador que cambia el estilo del bloque - Estilo exclusivo */
+.btn--orange{
+  color: orange;
+}
+
+/*  Modificador que cambia el estilo del bloque - Estilo exclusivo */
+.btn--big{
+  background-color: #5d5;
+  color: #fff;
+}

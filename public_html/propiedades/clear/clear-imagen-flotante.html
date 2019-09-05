@@ -1,0 +1,68 @@
+<!-- 
+Created on : 28-ago-2019 17:24:38 
+User : Raul Vela 
+Name archive : css-clear.html
+References :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+      img{
+        float: left;
+      }
+      
+      p{
+        background-color: #ccffcc;
+      }
+
+      hr{
+        clear: both;
+        background-color: #ff3333;
+        padding: 1px;
+      }
+      
+      hr::after{
+        content: "Propiedad - clear: both; Distribuye los elementos uno a continuacion del siguiente";
+      }
+
+      .izquierda-1{
+        width: 129px;
+        height: 122px;
+      }
+
+      .izquierda-2{
+        width: 103px;
+        height: 122px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      <img src="../-src/img/gnu-head-sm.jpg" title="Logotipo GNU" alt="Logo GNU" class="izquierda-1">
+      El logotipo de GNU debe "flotar" a la izquierda <br>
+      y el párrafo debe fluir a su derecha.
+    </p>
+
+    <hr>
+
+    <p>
+      <img src="../-src/img/tux.jpg" title="Logotipo Linux" alt="Logo Tux" class="izquierda-2">
+      El logotipo de Linux, Tux, debe "flotar" a la izquierda <br>
+      y el párrafo debe fluir a su derecha. <br>
+      Seguramente tanto la imagen como el párrafo <br>
+      están a la derecha del logotipo de GNU.
+    </p>
+    
+  </body>
+</html>

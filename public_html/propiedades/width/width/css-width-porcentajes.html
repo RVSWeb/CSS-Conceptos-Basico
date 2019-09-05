@@ -1,0 +1,100 @@
+<!--Created on 02-ago-2019, 14:04:49-->
+<!-- Referencia : https://uniwebsidad.com/libros/referencia-css2/width# -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>width con porcentajes</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      h3{
+        background-image: linear-gradient(to left,#acd4b6,#dfece3);
+      }      
+
+      .c1{
+        background: red;
+        width: 100%;
+      }
+
+      .c2{
+        background: yellow;
+        width: 90%;
+      }
+
+      .c3{
+        background: green;
+        width: 80%;
+      }
+
+      .c4{
+        background: aquamarine;
+        width: 70%;
+      }
+
+      .c5{
+        background: gray;
+        width: 60%;
+      }
+
+      .c6{
+        background: blueviolet;
+        width: 50%;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h3>Anchura respecto al elemento padre &lt;body&gt;</h3>
+
+    <div class="c1">
+      Primera caja - width: 100%;
+    </div>
+    <div class="c2">
+      Segunda caja - width: 90%;
+    </div>
+    <div class="c3">
+      Tercera caja - width: 80%;
+    </div>
+    <div class="c4">
+      Cuarta caja - width: 70%;
+    </div>
+    <div class="c5">
+      Quinta caja - width: 60%;
+    </div>
+    <div class="c6">
+      Quinta caja - width: 50%;
+    </div>
+
+    <hr>
+
+    <h3>Anchura respecto al 1º elemento padre &lt;div&gt;</h3>
+
+    <div class="c1">
+      Primera caja - width: 100%;
+      <div class="c2">
+        Segunda caja - width: 90%;
+        <div class="c3">
+          Tercera caja - width: 80%;
+          <div class="c4">
+            Cuarta caja - width: 70%;
+            <div class="c5">
+              Quinta caja - width: 60%;
+              <div class="c6">
+                Quinta caja - width: 50%;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

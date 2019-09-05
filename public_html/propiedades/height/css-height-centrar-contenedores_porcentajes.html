@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+ url : https://uniwebsidad.com/libros/css/capitulo-12/centrar-una-pagina-verticalmente
+-->
+<html>
+  <head>
+    <title>Centrar verticalmente una pagina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../src/img/Yin_yang.svg" type="xml+svg" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  </head>
+  <style>
+
+    #parent{
+      width: 50%; /* Ancho respecto al elemento padre 'body' */
+      height: 150px; /*Alto sobre el elemento*/
+      text-align: center;
+      border: 3px solid blue;
+      background: #6666ff;
+    }
+
+    #child{
+      max-width: 200px; /* */
+      height: 50%;
+      text-align: inherit;
+      border-color: red;
+      background-color: #ff6666;
+    }
+
+  </style>
+  <body>
+
+    <div id="parent">
+      div { height: 150px;}
+      <div id="child">
+        div { height: 50%;}
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="parent">
+      div { height: 150px;}
+    </div>
+    <div id="child">
+      div { height: 50%;}
+    </div>
+
+  </body>
+</html>

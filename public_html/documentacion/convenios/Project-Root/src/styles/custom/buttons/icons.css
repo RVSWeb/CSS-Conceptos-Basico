@@ -1,0 +1,27 @@
+/* 
+    Created on : 04-sep-2019, 13:49:46
+    Author     : RVS
+*/
+
+
+/**
+* icons.css - 80 caracteres para la explicacion
+*
+* Los iconos deben transmitir de manera simple y 
+* significativa el concepto de la función que 
+* representan.
+* Al diseñar nuevos íconos, asegúrese 
+* de eliminar cualquier complejidad y siga el 
+* aspecto lineal y liviano del conjunto de íconos.
+*/
+
+
+.icon{
+  font-family: 'Roboto',sans-serif;
+  speak: none; /*Indica si el texto de los elementos debe ser leído*/
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}

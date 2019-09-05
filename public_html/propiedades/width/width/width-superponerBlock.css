@@ -1,0 +1,39 @@
+/* 
+    Created on : 03-ago-2019, 14:41:11
+    Author     : RVS
+*/
+
+/*Elemento block*/
+
+nav.c0block{
+  display: block;
+  width: 100%;
+  background-color: red;
+}
+
+.div_block{
+  display: block;
+  padding: 1%;
+}
+
+/*Colores de caja caja*/
+
+.c1_capa1{
+  background-color: violet;
+}
+
+.c1_capa2{
+  background-color: yellow;
+}
+
+.c1_capa3{
+  background-color: green;
+}
+
+.c1_capa4{
+  background-color: aqua;
+}
+
+.c1_capa5{
+  background-color: grey;
+}
