@@ -1,16 +1,59 @@
+<!-- 
+Created on : 05-sep-2019 19:13:30 
+User : Raul Vela 
+Name archive : index.html
+Ref :
+--> 
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="es">
   <head>
-    <title>TODO supply a title</title>
-    <meta charset="UTF-8">
+    <title>T</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#4285f4">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main-pages/main.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main-pages/main-header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
-    <div>TODO write content</div>
+
+    <header>
+      <nav class="bar-main" id="bar-desplegable"> 
+        <a href="#" class="active">Principal</a>
+        <a href="#">Documentacion</a>
+        <a href="#">Media Query</a>
+        <a href="#">Propiedades</a>
+        <a href="javascript:void(0);" class="icon" onclick="desplegar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+
+    </main>
+
   </body>
+  <script>
+    /**
+     * 
+     */
+    function desplegar() {
+      var x = document.getElementById("bar-desplegable");
+      if (x.className === "bar-main") {
+        x.className += " responsivo";
+      } else {
+        x.className = "bar-main";
+      }
+    }
+  </script>
 </html>

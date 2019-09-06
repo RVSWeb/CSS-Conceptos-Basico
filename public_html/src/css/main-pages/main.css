@@ -1,0 +1,19 @@
+/* 
+    Created on : 05-sep-2019, 19:15:43
+    Author     : RVS
+*/
+
+/*
+*
+* main.css
+*
+* Encabezado principal de la pagina sobre CSS
+*
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
