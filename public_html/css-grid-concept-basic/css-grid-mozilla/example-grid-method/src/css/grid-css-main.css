@@ -1,0 +1,22 @@
+/* 
+    Created on : 06-oct-2019, 23:22:03
+    Author     : RVS
+*/
+
+body{
+  font-family: Roboto , sans-serif;
+}
+
+.title-grid {
+  width: 40%;
+  height: auto;
+  margin: 1% auto;
+  padding: 1.2%;
+  font-size: 1em;
+  text-align: center;
+  background-color: #dfcdc3;
+}
+
+.text-effusive{
+  font-size: 1.5em;
+}
