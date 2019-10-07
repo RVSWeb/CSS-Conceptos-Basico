@@ -6,11 +6,11 @@ Ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Con
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>x3 example grid lines</title>
+    <title>Example grid cells</title>
     <!--Parte tecnica que recibe el servidor-->
     <meta charset="utf-8">
     <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
-    <meta name="description" content="example grid lines">
+    <meta name="description" content="example grid cells">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4285f4">
@@ -29,6 +29,11 @@ Ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Con
       .title-grid{
         font-size: 3em;
         width: 30%;
+      }
+
+      figcaption{
+        width: 70%;
+        height: auto;
       }
 
       .wrapper-grid-cell{
@@ -55,29 +60,22 @@ Ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Con
         color: #d9480f;
       }
 
-      .box1{
-        /*Primer elemento empieza en la columna pos 1 y 
-        termina en la columna de posicion 4 */
-        grid-column-start: 1;
-        grid-column-end: 4;
-        /*Primer elemento empieza en la fila pos 1 y 
-        termina en la fila posicion 4*/
-        grid-row-start: 1;
-        grid-row-end: 3;
+      .box1 , 
+      .box2{
         font-size: 2em;
-        color: #fff !important;
-        background-color: #5f6769 !important;
+      }
+
+      .box1{
+        color: #fff !important;  
+        background-color: #5dc1b9 !important;
       }
 
       .box2{
-        /*Primer elemento empieza en la columna pos 1*/
-        grid-column-start: 1;
-        grid-row-start: 3;
-        grid-row-end: 5;
-        font-size: 1.5em;
-        color: #fff !important;
-        background-color: #719192 !important;
+        color: #000 !important;  
+        background-color: #fff !important;
       }
+
+
 
     </style>
   </head>
@@ -90,50 +88,38 @@ Ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Con
     </h1>
 
     <figure>
-      <img src="../src/img/grid-lines-columns.jpg" 
+      <img src="https://mdn.mozillademos.org/files/14643/1_Grid_Cell.png" 
            alt="Cuadricula donde se enumeran las distintas 
            partes horizontales y verticales">
       <figcaption>
-        Colocamos los items 'elementos' seleccionado 
-        las lineas &apos;line&apos; del &apos;track&apos; 
-        del &apos;Grid&apos;
+        <b>Grid Cell</b> es la unidad más pequeñas del <b>'Grid'</b><br>
+        El concepto igual a la celda de una tabla<br><br>
+        1º Definido el <b>'grid'</b> como elemento padre <br>
+        los elementos hijos se colocaran <br>
+        en una celda de la cuadricula definida <br>
+        En el ejemplo se ve de color <b>turquesa</b>
       </figcaption>
     </figure>
 
-    <h1 class="title-grid--second" style="width:50%;">
-      Colocar 2 primeros &apos;items&apos; 
-      sobre las 3 columnas &apos;track grid&apos;
-      usando 
-      <ul class="list-main">
-        <li class="list-element">grid-column-start</li>
-        <li class="list-element">grid-column-end</li>
-        <li class="list-element">grid-row-start</li>
-        <li class="list-element">grid-row-end</li>
-      </ul>
-      <br> <span class="text-effusive"> 
-      </span>
-    </h1>
-
     <div class="wrapper-grid-cell">
       <div class="box1">
-        <b>La primera fila y las columnas desde la 1º hasta la 4º</b><br>
-        grid-column-start: 1 - grid-column-end: 4<br>
-        grid-row-start: 1;<br>
-        grid-row-end: 3;<br>
+        <b>'Grid'</b> cell
       </div>
       <div class="box2">
-        <b>
-          Desde la fila 3º hasta 5º <br>
-          las columnas desde la 1 hasta la 4
-        </b>
-        <br>
-        grid-column-start: 1;<br>
-        grid-row-start: 3;<br>
-        grid-row-end: 5;<br>
+        <b>'Grid'</b> cell
       </div>
-      <div class="box3">Three - grid automatico</div>
-      <div class="box4">Four - grid automatico</div>
-      <div class="box5">Five - grid automatico</div>
+      <div class="box2">
+        <b>'Grid'</b> cell
+      </div>
+      <div class="box2">
+        <b>'Grid'</b> cell
+      </div>
+      <div class="box2">
+        <b>'Grid'</b> cell
+      </div>
+      <div class="box2">
+        <b>'Grid'</b> cell
+      </div>
     </div>
 
 
