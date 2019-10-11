@@ -24,13 +24,20 @@ minmax() - La función CSS define un rango de tamaño mayor
     <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
     <style>
 
+      /*
+      * Definir elementos del Grid Layout para ingresar elementos 
+      * dentro de la columna 
+      */
       .wrapper-auto-filling {
         display: grid;
         grid-template-columns: repeat(auto-fill, 200px);
         grid-auto-rows: 100px;
       }
 
-      .wrapper-auto-filling{
+      /*
+      * Establecer el diseño del Grid Layout
+      */
+      .wrapper-auto-filling {
         border: 2px solid #f76707;
         border-radius: 5px;
         background-color: #fff4e6;
@@ -44,9 +51,18 @@ minmax() - La función CSS define un rango de tamaño mayor
         color: #d9480f;
       }
 
+      /*
+      * Tenemos un 'Grid-Container' con 3 box
+      *
+      * funcion - minmax() define :
+      * tamaño min -> mayor o igual que min
+      * tamaño max -> menor o igual que max                                
+      */
       .wrapper-flexible-track {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        /*26% equivale aproximadamente a 200px */
+        /*grid-template-columns: repeat(auto-fill, minmax(26%, 1fr));*/
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-auto-rows: 150px;
       }
 
@@ -62,6 +78,28 @@ minmax() - La función CSS define un rango de tamaño mayor
         background-color: #ffd8a8;
         padding: 1em;
         color: #000;
+      }
+
+      .wrapper-flexible-track-ex {
+        display: grid;
+        grid-template-columns: minmax(max-content,300px) minmax(200px , 1fr) 150px;
+        /*grid-template-columns: minmax(max-content,30%) minmax(20% , 1fr) 15%;*/
+        grid-gap: 5px;
+        grid-auto-rows: 150px;
+        width: 100%;
+        padding: 1%;
+        height: auto;
+      }
+
+      .wrapper-flexible-track-ex {
+        padding: 1%;
+        background-color: #ac8daf;
+      }
+
+      .wrapper-flexible-track-ex > div {
+        padding: 1%;
+        text-align: center;
+        background-color: #f1d4d4;
       }
 
     </style>
@@ -194,18 +232,39 @@ minmax() - La función CSS define un rango de tamaño mayor
       <div class="wrapper-flexible-track">
         <div class="box-container">
           display: grid;<br>
-          grid-template-columns: repeat(auto-fill, 200px);<br>
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));<br>
           grid-auto-rows: 100px;<br>
         </div>
         <div class="box-container">
           display: grid;<br>
-          grid-template-columns: repeat(auto-fill, 200px);<br>
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));<br>
           grid-auto-rows: 100px;<br>
         </div>
         <div class="box-container">
           display: grid;<br>
-          grid-template-columns: repeat(auto-fill, 200px);<br>
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));<br>
           grid-auto-rows: 100px;<br>
+        </div>
+      </div>
+
+      <p class="section__subtitle-deco-6">
+        Ejemplo de la funcion minmax()
+      </p>
+
+      <p class="section__subtitle-deco-6">
+        Para un mejor ajuste usar &percnt;;
+      </p>
+
+      <div class="wrapper-flexible-track-ex">
+        <div>
+          Elemento tan ancho como el contenido,<br>
+          pero de máximo 300 píxeles.
+        </div>
+        <div>
+          Elemento con un ancho flexible, pero con un mínimo de 200 píxeles.
+        </div>
+        <div>
+          Elemento inflexible de 150 píxeles de ancho.
         </div>
       </div>
 

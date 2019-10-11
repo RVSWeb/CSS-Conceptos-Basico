@@ -88,24 +88,34 @@ h2 {
   text-align: center;
 }
 
-.section__subtitle-deco-3{
+.section__subtitle-deco-3 {
   width: 40%;
   background: #00adb5;
   text-align: center;
 }
 
-.section__subtitle-deco-4{
+.section__subtitle-deco-4 {
   width: 50%;
   background: #00adb5;
   text-align: center;
 }
 
-.section__subtitle-deco-5{
+.section__subtitle-deco-5 {
   width: 100%;
   padding: 1%;
   margin: 1% auto;
-  background: #ac8daf;
+  color: #fff;
   text-align: center;
+  background: #484c7f;
+}
+
+.section__subtitle-deco-6 {
+  width: 50%;
+  padding: 1%;
+  margin: 1% auto;
+  color: #fff;
+  text-align: center;
+  background: #484c7f;
 }
 
 .box-container{
