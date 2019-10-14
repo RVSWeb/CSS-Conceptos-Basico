@@ -64,6 +64,11 @@ Ref :
         font-weight: bolder;
       }
 
+      .b__title--black{
+        color: #000;
+        font-weight: bolder;
+      }
+
       .b__subtitle{
         color: #ff2e63;
       }
@@ -106,30 +111,38 @@ Ref :
 
         grid-row-start: 1;
         grid-row-end: 3;
+
         color: #fff;
         background-color: #ff2e63;
       }
 
-      .abs-pos{
+      .abs-pos {
         position: absolute;
-        top: 40px;
+        top: 145px;
         left: 40px;
-        background-color: rgba(255,255,255,.5);
-        border: 1px solid rgba(0,0,0,0.5);
+        padding: 1%;
+
         color: #000;
-        padding: 10px;
+        border: 1px solid rgba(0,0,0,0.5);
+        background-color: rgba(255,255,255,.5);
       }
+
+      /*
+       *
+       *
+       */
+
+
 
     </style>
   </head>
   <body>
 
-    <header class="cabecera">
+    <header class="first-header">
       <h1 class="title">Grid and absolutely positioned elements</h1>
     </header>
 
     <main class="principal">
-
       <section class="main__section-1">
         <div class="section__box-1">
           <p class="div__paragraph">
@@ -194,7 +207,7 @@ Ref :
         </div>
         <div class="wrapper-relative--box-3--absolute">
           <b class="b__title">Three</b><br>
-          <b class="b__subtitle">Position: Absolute</b><br>
+          <b class="b__subtitle">position: absolute</b><br>
           grid-column-start: 2;<br>
           grid-column-end: 4;<br>
           grid-row-start: 1;<br>
@@ -233,10 +246,29 @@ Ref :
           Two
         </div>
         <div class="wrapper-grid-area--box-3">
-          <b class="b__title">Three</b><br>
-          <b class="b__subtitle-grid-area">Position: Absolute</b>
+          <b class="b__title--black">Three</b><br>
+          <b class="b__title" style="color: #252a34;">
+            &nbsp; position: relative;<br>
+          </b>
+          <b class="b__title">
+            grid-column-start: 2;<br>
+            grid-column-end: 4;<br>
+            <br>
+            grid-row-start: 1;<br>
+            grid-row-end: 3;<br>
+          </b>
           <div class="abs-pos">
-            Este bloque está absolutamente posicionado. En este ejemplo, el área de la cuadrícula es el bloque contenedor y, por lo tanto, los valores de desplazamiento de posicionamiento absoluto se calculan desde los bordes exteriores del área de la cuadrícula.
+            <b class="b__subtitle-grid-area"> position:absolute</b><br>
+            top: 145px;<br>
+            left: 40px;<br>
+            <hr>
+            Este bloque está absolutamente posicionado.<br>
+            <hr>
+            En este ejemplo,<br>
+            El área de la cuadrícula es el bloque contenedor 
+            y, por lo tanto, los valores de desplazamiento de
+            posicionamiento absoluto se calculan desde los bordes <br>
+            exteriores del área de la cuadrícula.
           </div>
         </div>
         <div class="wrapper-grid-area--box">
@@ -244,7 +276,24 @@ Ref :
         </div>
       </div>
 
-
+      <h2 class="section__subtitle-2">
+        With a grid area as the parent
+      </h2>
+      <h3 class="subtitle--highlighted--grid-area">
+        Elemento Hijo &apos;Grid-Area&apos; 
+        es el contenedor de elementos secundarios
+      </h3>
+      <div class="wrapper-content">
+        <div class="box box1">
+          <div class="wrapper-content-nested">a</div>
+          <div class="wrapper-content-nested">b</div>
+          <div class="wrapper-content-nested">c</div>
+        </div>
+        <div class="box box2">Two</div>
+        <div class="box box3">Three</div>
+        <div class="box box4">Four</div>
+        <div class="box box5">Five</div>
+      </div>
 
     </main>
 

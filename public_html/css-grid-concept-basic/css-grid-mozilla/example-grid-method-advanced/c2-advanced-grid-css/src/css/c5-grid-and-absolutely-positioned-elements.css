@@ -15,7 +15,7 @@ header {
   margin: 1% auto;
 }
 
-.cabecera{
+.first-header{
   text-align: center; 
   font-size: 1em;
   background: #00adb5;
@@ -139,6 +139,6 @@ h2 {
 }
 
 .b__subtitle-grid-area {
-  padding: 5%;
+  padding: 1%;
   color: #000;
 }
