@@ -1,0 +1,125 @@
+<!-- 
+Created on : 29-oct-2019 20:42:48 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Background With Gif</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="Background With Gif">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton&display=swap" 
+          rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      body{
+        box-sizing: border-box;
+      }
+
+      .main-container {
+        display: grid;
+        width: 100%;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+      }
+      
+      .container-deco{
+        
+      }
+
+      .main-iframe{
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+        z-index: 0;
+      }
+
+      .iframe-bed{
+
+      }
+
+      .main-hgroup{
+        position: absolute;
+        top: 1%;
+        left: 20%;
+        right: 20%;
+        width: 50%;
+        margin: 1% auto;
+        z-index: 1;
+      }
+
+      .main-title{
+        color: #fff;
+        text-align: center;
+        font-size: 5em;
+        font-family: Amatic SC , cursive;
+        border-radius: 12px;
+      }
+
+      .main__section-space {
+        position: absolute;
+        top: 30%;
+        left: 100px;
+        width: 22%;
+        height: 250px;
+        z-index: 2;
+      } 
+
+      .section--bed-space{
+        text-align: center;
+        background: url("../-src/img/giphy.gif") no-repeat center;
+        border-radius: 80%;
+      }
+
+      .main__section-sun{
+        position: absolute;
+        top: 30%;
+        right: 100px;
+        width: 22%;
+        height: 250px;
+        z-index: 2;
+      }
+
+      .section--bed-sun{
+        text-align: center;
+        background: 
+          url("https://media.giphy.com/media/ctGFLebG1AqK4/giphy.gif") no-repeat center;
+        border-radius: 80%;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <main class="main-container container-deco"> 
+
+      <iframe class="main-iframe iframe-bed" 
+              src="https://www.youtube.com/embed/rfweuU6ZD78?rel=0&autoplay=1"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+
+      <hgroup class="main-hgroup">
+        <h2 class="main-title">Background with gif and iframe</h2>
+      </hgroup>
+
+      <section class="main__section-space section--bed-space"></section>
+
+      <section class="main__section-sun section--bed-sun"></section>
+
+    </main>
+
+  </body>
+</html>

@@ -39,6 +39,10 @@ main {
   grid-row: 3 / 4;
 }
 
+section{
+  
+}
+
 .display-name{
   grid-column: 3 / 6;
   grid-row: 1 / 2;
@@ -60,9 +64,9 @@ main {
 }
 
 .display-name {
-  font-size: 3em;
-  padding-left: 1%;
   margin: 0;
+  padding-left: 1%;
+  font-size: 3em;
   line-height: 1;
 }
 
@@ -78,10 +82,14 @@ main {
   object-position: 0 25%; 
 }
 
+.avatar-img--big{
+  height: auto;
+}
+
 .about h3 {
   display: inline;
-  font-size: 1em;
   margin-right: .5em;
+  font-size: 1em;
 }
 
 .post {
