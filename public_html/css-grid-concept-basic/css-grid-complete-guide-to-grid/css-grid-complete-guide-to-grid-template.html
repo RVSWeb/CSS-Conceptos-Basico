@@ -1,0 +1,107 @@
+<!-- 
+Created on : 01-nov-2019 22:40:53 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>CSS Grid Complete Guide To Grid Template</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      * {
+        box-sizing: content-box;
+      }
+
+      .main-box {
+        width: 100%;
+        max-width: 500px;
+        height: available;
+        max-height: 500px;
+      } 
+
+      .main-deco { 
+
+      }
+
+      .container{
+        display: grid;
+        width: 100%;
+        height: 200px;
+        grid-template: 
+           /*                                  columnas / filas */
+          [header-left] "head head" 50px [header-right]
+          [main-left] "nav main" 2fr [main-right]
+          [footer-left] "nav foot" 50px [footer-right] / 120px 1fr;
+      }
+
+      .container-deco{
+        border: 1px solid #f00;
+      }
+
+      header {
+        background-color: lime;
+        grid-area: head;
+      }w
+
+      nav {
+        background-color: lightblue;
+        grid-area: nav;
+      }
+
+      main {
+        background-color: yellow;
+        grid-area: main;
+      }
+
+      footer{
+        background-color: red;
+        grid-column: foot;
+      }
+
+      .item {
+        padding: 1%;
+        font-family: Roboto , sans-serif;
+        font-size: 2em;
+        border: 1px solid #00f;
+      }
+
+      .item-1{
+
+      }
+
+      .item-2{
+
+      }
+
+      .item-3{
+      
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="main-box main-deco">
+
+      <section class="container container-deco">
+        <header class="item item-1">header</header>
+        <nav class="item item-2">nav</nav>
+        <main class="item item-3">main</main>
+        <footer class="item item-3">footer</footer>
+      </section>
+
+    </main>
+  </body>
+</html>
