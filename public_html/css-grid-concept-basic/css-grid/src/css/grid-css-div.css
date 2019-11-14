@@ -28,7 +28,7 @@ nav{
   background-color: #dc4d4d;
 }
 
-.container {
+.container-row {
   display: grid;
   margin: 5px 0;
   padding: 5px;
