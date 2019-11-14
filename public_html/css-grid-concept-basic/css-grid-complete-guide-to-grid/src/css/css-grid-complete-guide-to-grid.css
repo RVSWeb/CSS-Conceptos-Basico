@@ -118,22 +118,16 @@ section{
 }
 
 .item-1-fr{
-  /*Propiedad que reduce o amplia la anchura de las fias */ 
-  grid-row: 2/10;
-  /*Propiedad que reduce o amplia la anchura de las columnas
-  Si la anchura es demasiado grande pasa a la siguiente fila*/ 
-  grid-column: 1/2;
+  background-color: #9999ff;
 }
 
 .item-2-fr{
-  grid-row: 2/5;
-  grid-column: 2/5;
+  background-color: #99ff99;
 }
 
 .item-3-fr{
-  grid-row: 4/7;
-  grid-column: 3/5;
-} 
+  background-color: #ccffff;
+}
 
 .item-4-fr{
   grid-row: 6/10;
@@ -141,7 +135,5 @@ section{
 }
 
 .item-5-fr{
-  grid-row: 2/10;
-  grid-column: 5/5;
+  background-color: #8aadb5;
 }
-
