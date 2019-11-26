@@ -51,7 +51,7 @@
   background-color: #ffcccc;
 }
 
-.item-1{
+.item-deco{
   /*
   Dentro del 'Grid Item' existen unas lineas que nos sirven
   para indicar la amplitud de los elementos 
@@ -93,7 +93,7 @@
 }
 
 /* Usamos el metodo de posicionamiento mediante Propiedades */
-.item-2{
+.item-child{
   grid-area: item-2;
 }
 

@@ -28,7 +28,7 @@ nav{
   background-color: #dc4d4d;
 }
 
-.container-row {
+.container-columns {
   display: grid;
   margin: 5px 0;
   padding: 5px;
@@ -40,7 +40,7 @@ section{
   line-height: 100px;
 }
 
-.left {
+.container-columns {
   background-color: #dc4d4d;
 }
 

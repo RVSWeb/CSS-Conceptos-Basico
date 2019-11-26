@@ -49,11 +49,11 @@ h2 {
   flex-basis: 100px;
 }
 
-.item-1 {
+.item-deco {
   background: #e3fdfd;
 }
 
-.item-2 {
+.item-child {
   background: #cbf1f5;
 }
 

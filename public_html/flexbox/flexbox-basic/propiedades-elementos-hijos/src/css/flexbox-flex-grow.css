@@ -49,12 +49,12 @@ h2 {
   line-height: 90px;
 }
 
-.item-1 {
+.item-deco {
   background: #e3fdfd;
   flex-grow: 1;
 }
 
-.item-2 {
+.item-child {
   background: #cbf1f5;
   flex-grow: 3;
 }

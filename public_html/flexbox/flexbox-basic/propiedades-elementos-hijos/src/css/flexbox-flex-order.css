@@ -51,12 +51,12 @@ body{
   flex-basis: 100px;
 }
 
-.item-1 {
+.item-deco {
   background: #e3fdfd;
   order: 5;
 }
 
-.item-2 {
+.item-child {
   background: #cbf1f5;
   order: 4;
 }

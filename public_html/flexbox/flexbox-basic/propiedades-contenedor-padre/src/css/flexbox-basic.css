@@ -31,7 +31,7 @@ body{
   background: #71c9ce;
 }
 
-.container-row {
+.container-columns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -69,8 +69,8 @@ body{
   font-family: Dosis , sans-serif;
 }
 
-.item-1 , 
-.item-2 , 
+.item-deco , 
+.item-child , 
 .item-3 , 
 .item-4 , 
 .item-5 , 

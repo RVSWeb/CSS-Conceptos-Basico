@@ -42,7 +42,7 @@ nav{
   background-color: #dc4d4d;
 }
 
-.container-row {
+.container-columns {
   /*Posicionar container con 3 elementos div */
   display: grid;
   grid-template-column: repeat(3, 1fr);
@@ -58,7 +58,7 @@ section{
   line-height: 100px;
 }
 
-.left {
+.container-columns {
   background-color: #dc4d4d;
   /*1º fila tiene 1 columna*/
   grid-column-start: 1;

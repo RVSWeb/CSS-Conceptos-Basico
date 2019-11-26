@@ -49,14 +49,14 @@ body{
   height: 50px;
 }
 
-.item {
+.flex-item {
   font-family: Dosis , sans-serif;
   border: 1px solid #000;
   padding: 1%;
 }
 
-.item-1 , 
-.item-2 , 
+.item-deco , 
+.item-child , 
 .item-3 , 
 .item-4 , 
 .item-5 , 

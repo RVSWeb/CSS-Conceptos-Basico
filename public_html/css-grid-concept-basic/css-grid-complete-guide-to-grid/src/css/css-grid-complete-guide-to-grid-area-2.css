@@ -36,7 +36,7 @@ body{
   border: 3px solid red;
 }
 
-.container-row {
+.container-columns {
   box-sizing: border-box;
   width: auto;
   display: grid;

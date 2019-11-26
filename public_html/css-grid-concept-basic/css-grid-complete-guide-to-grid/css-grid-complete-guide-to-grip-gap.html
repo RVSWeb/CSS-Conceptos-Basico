@@ -34,7 +34,7 @@ Ref :
         max-height: 500px;
       }
 
-      .container{
+      .container-columns{
         margin: 1% auto;
 
         display: grid;
@@ -50,7 +50,7 @@ Ref :
         border-radius: 12px;
       }
 
-      .item{
+      .flex-item{
         text-align: center;
         line-height: 70px;
         vertical-align: middle;
@@ -58,11 +58,11 @@ Ref :
         border-radius: 12px;
       }
 
-      .item-1{
+      .item-deco{
         background-color: #ffcc99;
       }
 
-      .item-2{
+      .item-child{
         background-color: #66ff66;
       }
 
@@ -73,18 +73,18 @@ Ref :
     </style>
   </head>
   <body>
-    <div class="container container--deco">
-      <div class="item item-1">header</div>
-      <div class="item item-1">header</div>
-      <div class="item item-1">header</div>
+    <div class="container-columns container--deco">
+      <div class="flex-item item-deco">header</div>
+      <div class="flex-item item-deco">header</div>
+      <div class="flex-item item-deco">header</div>
 
-      <div class="item item-2">main</div>
-      <div class="item item-2">main</div>
-      <div class="item item-2">main</div>
+      <div class="flex-item item-child">main</div>
+      <div class="flex-item item-child">main</div>
+      <div class="flex-item item-child">main</div>
 
-      <div class="item item-3">footer</div>
-      <div class="item item-3">footer</div>
-      <div class="item item-3">footer</div>
+      <div class="flex-item item-3">footer</div>
+      <div class="flex-item item-3">footer</div>
+      <div class="flex-item item-3">footer</div>
     </div>
   </body>
 </html>

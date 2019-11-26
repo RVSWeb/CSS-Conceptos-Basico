@@ -62,7 +62,7 @@ body{
   background: #cccccc;
 }
 
-.container-row {
+.container-columns {
   display: grid;
   /* Indicamos cuantas columnas de elementos queremos tener : 2 */
   grid-template-columns: auto auto;
@@ -83,11 +83,11 @@ body{
   border: 1px solid #000;
 } 
 
-.item-1 {
+.item-deco {
   background: #dedef0;
 }
 
-.item-2 {
+.item-child {
   background: #ffad87;
 }
 

@@ -19,7 +19,7 @@ section{
 * Grid-Container
 *
 */
-.container-row {
+.container-columns {
   display: grid;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px auto;
@@ -39,11 +39,11 @@ section{
   border: 1px solid #000;
 }
 
-.item-1 {
+.item-deco {
   background-color: red;
 }
 
-.item-2 {
+.item-child {
   background-color: green;
 }
 
