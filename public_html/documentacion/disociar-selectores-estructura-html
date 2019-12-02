@@ -1,4 +1,5 @@
-selectores de CSS que pierden el estilo al cambiar la estructura
+selectores de CSS que pierden el estilo 
+al cambiar la estructura
 
 NO
 .header > nav > li > .button {...}
