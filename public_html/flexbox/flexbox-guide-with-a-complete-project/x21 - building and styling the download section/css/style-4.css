@@ -165,3 +165,137 @@ END THE HEADER STYLES
     flex-basis: 100%;
   }
 }
+
+/*********************
+END THE POST STYLES
+*********************/
+
+/*********************
+START WATCH SECTION STYLES
+*********************/
+
+.section-header {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+
+.watch-card {
+  margin-bottom: 1em;
+}
+
+.watch-content{
+  background-color: black;
+  color: white;
+  padding: 3em;
+}
+
+.watch-content h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.movie-info {
+  font-weight: bold;
+}
+
+.movie-info span {
+  padding-right: 1.5em;
+}
+
+.movie-story {
+  margin: 1em 0;
+}
+
+.watch-content a {
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 810px){
+
+  /*Contenedor padre 1-nivel*/
+  .watch-card {
+    display: flex;
+  }
+
+  /*Elemento hijo 1-nivel*/ 
+  .img-right{
+    order: 2;
+  }
+
+  /*Contenedor padre 2-nivel*/
+  .watch-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+}
+/*********************
+END WATCH SECTION STYLES
+*********************/
+
+/*********************
+START SECTION DOWNLOAD STYLES
+*********************/
+
+.download-card{
+  margin-bottom: 1em;
+}
+
+.download-content{
+  background-color: white;
+}
+
+.download-content a {
+  background-color: black;
+  color: white;
+  padding: 1em 2em; 
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.download-content a i {
+  font-size: 2.5em;
+}
+
+.download-info {
+  padding: 1em 2em;
+}
+
+.download-info h4 {
+  margin: 0;
+}
+
+.download-info p {
+  margin: 0;
+  font-size: .9em;
+}
+
+.download-cast img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.download-rating{
+  background-color: #f6d200;
+  padding: 1em;
+  color: black;
+  font-size: .9em;
+}
+
+.download-rating .rate {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: -0.25em;
+}
+
+/*********************
+END SECTION DOWNLOAD STYLES
+*********************/
+
+
