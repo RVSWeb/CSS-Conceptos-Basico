@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max Width</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .p1 {
+            margin: 10px 0;
+            max-width: 400px;
+            text-align: center;
+            font-weight: bold;
+            border: 5px solid purple;
+        }
+
+        p {
+            border: 1px solid purple;
+        }
+
+        .basic-width {
+            border: 1px solid #0f0;
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .ex1 {
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border: 3px solid #73AD21;
+        }
+
+        .ex2 {
+            max-width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border: 3px solid #73AD21;
+        }
+
+        .ex3-a {
+            width: 500px;
+            height: auto;
+            border: 2px solid #f00;
+        }
+
+        .ex3-b {
+            max-width: 60%;
+            height: auto;
+            border: 5px solid #00f;
+        }
+        
+        .ex4-a {
+            margin: 10px 0;
+            width: 500px;
+            height: auto;
+            border: 2px solid #f00;
+        }
+
+        .ex4-b {
+            max-width: 500px;
+            height: auto;
+            border: 5px solid #00f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>max-width</h1>
+    <p class="p1">Ideal para pantallas pequeñas en navegadores</p>
+    <p class="p1">Ideal para pantallas de dispositivos moviles</p>
+
+    <p class="p1"><b>Propiedad : max-width</b>
+        <br>Hace que el margen final de las pantallas
+        <br>
+        del dispositivo no se trague el margen de la caja 'box' del item
+        <br>
+        Este se va reduciendo y ajustando cada vez que se va reduciendo
+    </p>
+
+    <div class="basic-width">
+        <p>
+            This element has a width of 500px, and margin set to auto.
+        </p>
+    </div>
+
+    <div class="ex1">
+        <p>
+            <b>Contenedor padre es body</b>
+        </p>
+        <p>
+            This div element has width: 500px;
+        </p>
+    </div>
+
+    <div class="ex2">
+        <p class="p1">
+            <b>Contenedor padre es un div</b>
+        </p>
+        <p class="p1">
+            This div element has max-width: 500px;
+        </p>
+        <b>
+            El ancho del contenedor se ajusta
+            cuando se reduce
+        </b>
+    </div>
+
+    <div class="ex3-a">
+        <div class="ex3-b">
+            <p>
+                <b>Contenedor padre es un div</b>
+            </p>
+            <p>
+                This div element has <b>max-width: 50%</b>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="ex4-a">
+        <div class="ex4-b">
+            <p>
+                <b>Contenedor padre es un div</b>
+            </p>
+            <p>
+                This div element has <b>max-width: 50%</b>
+                <br>
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

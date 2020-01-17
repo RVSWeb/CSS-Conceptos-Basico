@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max Width</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .div-1-max-width {
+            margin: 10px 0;
+            max-width: 250px;
+            border: 5px solid purple;
+        }
+
+        .div-2-width {
+            width: 350px;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid violet;
+        }
+
+        .div-3-parent-max-width::before {
+            content: "width:500px;";
+        }
+
+        .div-3-parent-max-width {
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border: 10px solid #73AD21;
+        }
+
+        .div-3-max-width {
+            max-width: 400px;
+            border: 3px solid magenta;
+        }
+
+        .div-3-width {
+            width: 400px;
+            border: 3px solid #f00;
+        }
+
+        .div-3-width-max-width {
+            width: 450px;
+            max-width: 250px;
+            border: 3px solid #00f;
+        }
+
+        .separa {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>max-width</h1>
+
+    <div class="div-1-max-width">
+        div - Elemento padre es BODY<br>
+        <b>max-width: 250px; se ajusta al ancho</b>
+    </div>
+
+    <div class="div-2-width">
+        div - Elemento padre es BODY<br>
+        width : 350px<br>
+        No se ajusta al reducir la pantalla
+    </div>
+
+    <div class="div-3-parent-max-width">
+        <div class="div-3-max-width separa">
+            <b>DIV HIJO</b> si reduce su tamaño max-width: 400px;
+        </div>
+        <div class="div-3-width separa">
+            <b>DIV HIJO</b> no reduce su tamaño width: 400px;
+        </div>
+        <div class="div-3-width-max-width separa">
+            <b>width: 400px;</b><br>
+            <b>max-width: 250px</b>
+            <hr>
+            <b>max-width: 250px</b><br>
+            ANULA la propiedad <br>
+            <b>width: 400px;</b><br>
+            SI LA PROPIEDAD <b>max-width</b><br>
+            es mayor que <b>width</b><br>
+            el elemento HIJO aplica
+            la propiedad <b>max-width</b><br>
+            TAMPOCO SE AJUSTA AL ANCHO DE LA PANTALLA
+        </div>
+    </div>
+
+</body>
+
+</html>

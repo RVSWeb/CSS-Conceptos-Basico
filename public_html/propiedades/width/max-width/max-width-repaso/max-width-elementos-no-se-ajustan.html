@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max Width</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .p1 {
+            max-width: 250px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid purple;
+        }
+
+        .p2 {
+            width: 500px;
+            max-width: 250px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid purple;
+        }
+
+        .ex1 {
+            width: 500px;
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border: 3px solid #73AD21;
+        }
+
+        .b1 {
+            border: 1px solid #f00;
+        }
+
+        .ex2 {
+            width: auto;
+            /* width: 500px; */
+            /* max-width: 300px; */
+            height: auto;
+            margin: 20px 0;
+            border: 5px solid #73AD21;
+        }
+
+        .b2 {
+            max-width: 250px;
+            border: 1px solid #f00;
+        }
+
+        .p3 {
+            width: 500px;
+            max-width: 250px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid purple;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>max-width</h1>
+    <!-- max-width: 250px;
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0;
+        border: 5px solid purple; -->
+    <p class="p1">
+        p1 - Elemento padre es BODY
+    </p>
+
+    <!-- width: 500px;
+        max-width: 250px;
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0;
+        border: 5px solid purple; -->
+    <p class="p2">
+        p2 - Elemento padre es BODY
+        <br>
+        Al tener la propiedad width: 500px
+        <br>
+        max-width: 250px<br>
+        El margen no se ajusta <br>
+        al marco del navegador<br>
+    </p>
+
+    <!-- max-width: 250px;
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0;
+        border: 5px solid purple; -->
+    <p class="p1">
+        p1 - Elemento padre es BODY
+        <br>
+        <b>Propiedad : max-width</b>
+        <br>
+        Hace que el margen final de las pantallas
+        <br>
+        del dispositivo no se trague el margen de la caja 'box' del item
+        <br>
+        Este se va reduciendo y ajustando cada vez que se va reduciendo
+    </p>
+
+    <!-- 
+    width: 500px;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #73AD21; 
+    -->
+    <div class="ex1">
+        <!-- 
+            max-width: 250px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid purple;
+         -->
+        <p class="p1">
+            <b>Contenedor padre es un div ex1</b>
+        </p>
+        <p class="p1">
+            This div element has max-width: 500px;
+        </p>
+        <b class="b1">
+            El ancho del contenedor se ajusta
+            cuando se reduce
+        </b>
+    </div>
+
+    <!-- 
+    width: 500px;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #73AD21; 
+    -->
+    <div class="ex2">
+        <!-- 
+            width: 500px;
+            max-width: 250px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid purple;
+         -->
+        <p class="p2">
+            <b>Contenedor padre es un div ex2</b>
+        </p>
+        <p class="p2">
+            This div element has max-width: 500px;
+        </p>
+        <b class="b2">
+            El ancho del contenedor se ajusta
+            cuando se reduce
+        </b>
+    </div>
+
+    <!-- 
+    width: 500px;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #73AD21; 
+    -->
+    <div class="ex3">
+        <!-- 
+            width: 500px;
+            max-width: 250px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 5px solid purple;
+         -->
+        <p class="p3">
+            <b>Contenedor padre es un div ex2</b>
+        </p>
+        <p class="p3">
+            This div element has max-width: 500px;
+        </p>
+        <b class="b3">
+            El ancho del contenedor se ajusta
+            cuando se reduce
+        </b>
+    </div>
+
+</body>
+
+</html>
