@@ -3,45 +3,162 @@
 https://developer.mozilla.org/es/docs/Web/CSS/max-width
 -->
 <html>
-  <head>
-    <title>max-width sobreescribe width</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='icon' href="https://goo.gl/cais23" type="image/png" sizes="any">
-    <style>
-      
-      #parent{
-        background: lightblue;
-        width: 500px;
-      }
 
-      #child{
-        background: gold;
-        width: 100%;
-        max-width: 250px;
-      }
+<head>
+  <title>max-width sobreescribe width</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="https://goo.gl/cais23" type="image/png" sizes="any">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-    </style>
-  </head>
-  <body>
+    /* No ajusta su contenido */
+    #parent {
+      margin: 10px 0;
+      background: lightblue;
+      width: 500px;
+      border: 5px solid #f00;
+    }
 
-    <div id="parent">
-      width: 500px; - Respecto al <b>body</b>
+    /* No ajusta su contenido */
+    #child {
+      background: gold;
+      width: 500px;
+      max-width: 250px;
+      border: 5px solid purple;
+    }
+
+    /* Si se ajusta su contenido */
+    #child-alone-auto {
+      width: auto;
+      max-width: 350px;
+      margin: 10px 0;
+      background: gold;
+      border: 5px solid purple;
+    }
+
+    /* Se ajusta su contenido padre e hijo */
+    #parent-500 {
+      width: 500px;
+      margin: 10px 0;
+      background: lightblue;
+      border: 5px solid #f00;
+    }
+
+    #child-400 {
+      width: 400px;
+      max-width: 250px;
+      background: gold;
+      border: 5px solid purple;
+    }
+
+    /* Se ajusta su contenido padre e hijo */
+    #parent-100 {
+      width: 100%;
+      margin: 10px 0;
+      background: lightblue;
+      border: 5px solid #f00;
+    }
+
+    #child-100 {
+      width: 100%;
+      max-width: 250px;
+      background: gold;
+      border: 5px solid purple;
+    }
+
+    /* Se ajusta su contenido padre e hijo */
+    #parent-auto {
+      width: auto;
+      margin: 10px 0;
+      background: lightblue;
+      border: 5px solid #f00;
+    }
+
+    #child-auto {
+      width: auto;
+      max-width: 250px;
+      background: gold;
+      border: 5px solid purple;
+    }
+
+    /* No se ajusta su contenido ni padre ni hijo */
+    #parent-mdn {
+      width: 500px;
+      border: 5px solid #f00;
+    }
+
+    #child-auto-mdn {
+      width: 100%;
+      max-width: 250px;
+      background: gold;
+      border: 5px solid purple;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="parent">
+    width: 500px; <br>- Respecto al <b>body</b><br>
+    - Respecto al <b>body</b><br>
+    - El borde del elemento desaparace porque no se ajusta <br>
+    - No ajusta su contenido
+  </div>
+
+  <div id="child">
+    width: 100%; <br>- Respecto al <b>body</b><br>
+    - max-width: 250px;<br>
+    - Respecto al <b>body</b><br>
+    - El borde de elemento no desaparace si se ajusta
+  </div>
+
+  <div id="child-alone-auto">
+    width: auto; <br>- Respecto al <b>body</b><br>
+    - max-width: 350px;<br>
+    - Respecto al <b>body</b><br>
+    - El borde de elemento no desaparace si se ajusta
+  </div>
+
+  <div id="parent-500">
+    width: 500px; - Respecto al <b>body</b><br>
+    - El borde del elemento desaparace porque no se ajusta
+    <div id="child-400">
+      width: 400px <br>
+      - max-width: 250px;
     </div>
-    
-    <div id="child">
-      width: 100% - max-width: 250px; 
-      <br>Respecto al <b>body</b> 
+  </div>
+
+  <div id="parent-100">
+    width: 100%; - Respecto al <b>body</b><br>
+    - El borde del elemento desaparace porque no se ajusta
+    <div id="child-100">
+      width: 100% <br>
+      - max-width: 250px;
     </div>
+  </div>
 
-    <hr>
-
-    <div id="parent">
-      width: 500px; - Respecto al <b>body</b>
-      <div id="child">
-        width: 100% - max-width: 250px;
-      </div>
+  <div id="parent-auto">
+    width: auto; - Respecto al <b>body</b><br>
+    - El borde del elemento desaparace porque no se ajusta
+    <div id="child-auto">
+      width: auto <br>
+      - max-width: 250px;
     </div>
+  </div>
 
-  </body>
+  <div id="parent-mdn">
+    width: 500px; - Respecto al <b>body</b><br>
+    - El borde del elemento desaparace porque no se ajusta
+    <div id="child-auto-mdn">
+      width: 100% <br>
+      - max-width: 250px;
+    </div>
+  </div>
+
+</body>
+
 </html>

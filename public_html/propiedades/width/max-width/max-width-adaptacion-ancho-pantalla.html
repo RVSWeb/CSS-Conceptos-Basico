@@ -1,59 +1,80 @@
 <!DOCTYPE html>
 <!-- https://developer.mozilla.org/es/docs/Web/CSS/max-width -->
 <html>
-  <head>
-    <title>max-width-adaptacion-ancho-pantalla</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" 
-          href="../../src/img/Yin_yang.svg" 
-          sizes="any"
-          type="image/svg+xml">
-    
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
-          integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" 
-          crossorigin="anonymous" />
-    
-    <style>
 
-      .parent{
-        width: 100%; /* Respecto al padre - body */
-        border: 5px solid rgba(3,88,216,.6);
-        background-color: rgba(3,88,216,.1);
-      }
+<head>
+  <title>max-width-adaptacion-ancho-pantalla</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../src/img/Yin_yang.svg" sizes="any" type="image/svg+xml">
 
-      .child{
-        /* Respecto al padre que es body y ocupa el 100% del ancho de la pantalla */
-        max-width: 400px; 
-        border: 1px solid #ff0000;
-        background-color: #ffff00;
-      }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+  <style>
+    .parent {
+      width: 100%;
+      /* Respecto al padre - body */
+      border: 5px solid rgba(3, 88, 216, .6);
+      background-color: rgba(3, 88, 216, .1);
+    }
 
-    </style>
-  </head>
-  <body>
+    .child {
+      /* Respecto al padre que es body y ocupa el 100% del ancho de la pantalla */
+      max-width: 400px;
+      margin: 10px 0;
+      border: 5px solid #ff0000;
+      background-color: #ffff00;
+    }
 
-    <hr>
+    .parent-2 {
+      margin: 10px 0;
+      width: auto;
+      /* Respecto al padre - body */
+      border: 5px solid rgba(3, 88, 216, .6);
+      background-color: rgba(3, 88, 216, .1);
+    }
 
-    <div class="parent">
-      width: 100%; - <b>padre</b> es 'body'
-    </div>
-    
+    .child-2 {
+      /* Respecto al padre que es body y ocupa el 100% del ancho de la pantalla */
+      max-width: 400px;
+      margin: 10px 0;
+      border: 5px solid #ff0000;
+      background-color: #ffff00;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>max-width</h1>
+
+  <div class="parent">
+    width: 100%; - <b>padre</b> es 'body'
+    - el elemento siempre ocupa todo el espacio
+    y no se ajusta el margen del dispositivo cuando
+    se reduce pero si lo hace su contenido
+  </div>
+
+  <div class="child">
+    max-width: 400px; - <b>padre</b> es 'body'
+  </div>
+
+  <div class="parent">
+    width: 100%; - <b>padre</b> es 'body'
     <div class="child">
-      max-width: 400px; - <b>padre</b> es 'body'
+      max-width: 400px; - <b>hijo</b> es 'parent'
     </div>
+  </div>
 
-    <hr>
-
-    <div class="parent">
-      width: 100%; - <b>padre</b> es 'body'
-      <div class="child">
-        max-width: 400px; - <b>hijo</b> es 'parent'
-      </div>
+  <div class="parent-2">
+    width: auto - <b>padre</b> es 'body'
+    - el navegador ajusta el ancho del elemento
+    cada vez que se reduce su tamaño
+    <div class="child-2">
+      max-width: 400px; - <b>hijo</b> es 'parent'
     </div>
+  </div>
 
-    <hr>
+</body>
 
-  </body>
 </html>

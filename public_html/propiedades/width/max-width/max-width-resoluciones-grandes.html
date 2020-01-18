@@ -3,50 +3,66 @@ Created on : 27-ago-2019 22:39:21
 User : Raul Vela 
 Name archive : max-width-resoluciones-grandes.html
 References : https://uniwebsidad.com/libros/referencia-css2/max-width
---> 
+-->
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>max-width-resoluciones-grandes.html</title>
-    <!--Parte tecnica que recibe el servidor-->
-    <meta charset="utf-8">
-    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
-    <meta name="description" content="max-width resoluciones grandes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <style>
 
-      *,::before, ::after{
-        box-sizing: border-box;
+<head>
+  <title>max-width-resoluciones-grandes.html</title>
+  <!--Parte tecnica que recibe el servidor-->
+  <meta charset="utf-8">
+  <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+  <meta name="description" content="max-width resoluciones grandes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <style>
+    *,
+    ::before,
+    ::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    #contenedor {
+      margin: 10px 0;
+      width: 95%;
+      max-width: 500px;
+      border: 5px solid #00f;
+    }
+
+    /* afecta a todo lo que este por debajo*/
+    @media screen and (max-width: 299px) {
+      #contenedor {
+        background: red;
       }
+    }
 
-      #contenedor{
-        width: 95%;
-        max-width: 1200px;
-      }
-
-      /* afecta a todo lo que este por debajo*/
-      @media screen and (max-width: 299px){
-        #contenedor{
-          background: red;
-        }
-      }
-
-      /* afecta a todo lo que este por encima 300px ,
+    /* afecta a todo lo que este por encima 300px ,
       si se desciende por debajo de 300px se aplica el rojo*/
-      @media screen and (min-width: 300px){
-        #contenedor{
-          background: yellow;
-        }
+    @media screen and (min-width: 300px) {
+      #contenedor {
+        background: yellow;
       }
+    }
+  </style>
+</head>
 
-    </style>
-  </head>
-  <body>
-    <div id="contenedor">
-      max-width: 1200px;
-    </div>
-  </body>
+<body onload="rangoPixeles()">
+  <div id="contenedor">
+    max-width: <span id="pixeles"></span>px;
+  </div>
+</body>
+<script>
+
+  function rangoPixeles() {
+    var x = document.getElementById("pixeles").innerHTML = window.innerWidth;
+    setTimeout(rangoPixeles);
+  }
+
+
+</script>
+
 </html>
